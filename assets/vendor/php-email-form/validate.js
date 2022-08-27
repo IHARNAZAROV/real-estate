@@ -106,7 +106,7 @@ jQuery(document).ready(function($) {
     this_form.find('.loading').slideDown();
     
     $.ajax({
-      type: "POST",
+      method: "POST",
       url: action,
       data: str,
       success: function(msg) {
