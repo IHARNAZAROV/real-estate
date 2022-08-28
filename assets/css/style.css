@@ -774,14 +774,14 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-.team {
+# Foto
+------------------------------------------------------------*/
+.foto {
   background: #fff;
   padding: 60px 0;
 }
 
-.team .member {
+.foto .image {
   text-align: center;
   margin-bottom: 20px;
   background: #343a40;
@@ -789,7 +789,7 @@ section {
   overflow: hidden;
 }
 
-.team .member .member-info {
+.foto .image .image-info {
   opacity: 0;
   position: absolute;
   bottom: 0;
@@ -799,7 +799,7 @@ section {
   transition: 0.2s;
 }
 
-.team .member .member-info-content {
+.foto .image .image-info-content {
   position: absolute;
   left: 50px;
   right: 0;
@@ -807,21 +807,21 @@ section {
   transition: bottom 0.4s;
 }
 
-.team .member .member-info-content h4 {
+.foto .image .image-info-content h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
   color: #fff;
 }
 
-.team .member .member-info-content span {
+.foto .image .image-info-content span {
   font-style: italic;
   display: block;
   font-size: 13px;
   color: #fff;
 }
 
-.team .member .social {
+.foto .image .social {
   position: absolute;
   left: -50px;
   top: 0;
@@ -832,23 +832,23 @@ section {
   text-align: center;
 }
 
-.team .member .social a {
+.foto .image .social a {
   transition: color 0.3s;
   display: block;
   color: #fff;
   margin-top: 15px;
 }
 
-.team .member .social a:hover {
+.foto .image .social a:hover {
   color: #eb5d1e;
 }
 
-.team .member .social i {
+.foto .image .social i {
   font-size: 18px;
   margin: 0 2px;
 }
 
-.team .member:hover .member-info {
+.foto .image:hover .image-info {
   background: linear-gradient(
     0deg,
     rgba(78, 64, 57, 0.95) 0%,
@@ -859,12 +859,12 @@ section {
   transition: 0.4s;
 }
 
-.team .member:hover .member-info-content {
+.foto .image:hover .image-info-content {
   bottom: 30px;
   transition: bottom 0.4s;
 }
 
-.team .member:hover .social {
+.foto .image:hover .social {
   left: 0;
   transition: left ease-in-out 0.3s;
 }
@@ -909,7 +909,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact Us
+# Contact
 --------------------------------------------------------------*/
 .contact .info {
   border-top: 3px solid #eb5d1e;
