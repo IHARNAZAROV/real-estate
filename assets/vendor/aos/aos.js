@@ -93,8 +93,7 @@
             ? M()
             : (x.disableMutationObserver ||
                 d.default.isSupported() ||
-                ({},
-                (x.disableMutationObserver = !0)),
+                ({}, (x.disableMutationObserver = !0)),
               document
                 .querySelector("body")
                 .setAttribute("data-aos-easing", x.easing),

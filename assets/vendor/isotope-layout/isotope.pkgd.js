@@ -292,12 +292,7 @@
 
   function noop() {}
 
-  var logError =
-    typeof console == "undefined"
-      ? noop
-      : function (message) {
-          
-        };
+  var logError = typeof console == "undefined" ? noop : function (message) {};
 
   // -------------------------- measurements -------------------------- //
 

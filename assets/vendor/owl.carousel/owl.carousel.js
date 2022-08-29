@@ -1500,7 +1500,6 @@
     ) {
       width = document.documentElement.clientWidth;
     } else {
-      
     }
     return width;
   };
