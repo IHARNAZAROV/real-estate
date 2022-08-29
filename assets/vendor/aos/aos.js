@@ -222,7 +222,8 @@
         }
         function r(e) {
           return (
-            Boolean(e) && "object" == ("undefined" == typeof e ? "undefined" : c(e))
+            Boolean(e) &&
+            "object" == ("undefined" == typeof e ? "undefined" : c(e))
           );
         }
         function a(e) {
@@ -241,7 +242,11 @@
           if ("string" != typeof e) return 0 === e ? e : Number(e);
           e = e.replace(l, "");
           var n = m.test(e);
-          return n || b.test(e) ? v(e.slice(2), n ? 2 : 8) : p.test(e) ? f : Number(e);
+          return n || b.test(e)
+            ? v(e.slice(2), n ? 2 : 8)
+            : p.test(e)
+            ? f
+            : Number(e);
         }
         var c =
             "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -369,7 +374,8 @@
         }
         function i(e) {
           return (
-            Boolean(e) && "object" == ("undefined" == typeof e ? "undefined" : u(e))
+            Boolean(e) &&
+            "object" == ("undefined" == typeof e ? "undefined" : u(e))
           );
         }
         function r(e) {
@@ -388,7 +394,11 @@
           if ("string" != typeof e) return 0 === e ? e : Number(e);
           e = e.replace(d, "");
           var n = p.test(e);
-          return n || m.test(e) ? b(e.slice(2), n ? 2 : 8) : l.test(e) ? s : Number(e);
+          return n || m.test(e)
+            ? b(e.slice(2), n ? 2 : 8)
+            : l.test(e)
+            ? s
+            : Number(e);
         }
         var u =
             "function" == typeof Symbol && "symbol" == typeof Symbol.iterator

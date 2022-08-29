@@ -1531,10 +1531,12 @@
           this.$stage.append(item);
           this._items.push(item);
           this._mergers.push(
-            Number(item
-              .find("[data-merge]")
-              .addBack("[data-merge]")
-              .attr("data-merge")) || 1
+            Number(
+              item
+                .find("[data-merge]")
+                .addBack("[data-merge]")
+                .attr("data-merge")
+            ) || 1
           );
         }, this)
       );
@@ -1573,10 +1575,12 @@
       this._items.length !== 0 && this._items[position - 1].after(content);
       this._items.push(content);
       this._mergers.push(
-        Number(content
-          .find("[data-merge]")
-          .addBack("[data-merge]")
-          .attr("data-merge")) || 1
+        Number(
+          content
+            .find("[data-merge]")
+            .addBack("[data-merge]")
+            .attr("data-merge")
+        ) || 1
       );
     } else {
       this._items[position].before(content);
@@ -1584,10 +1588,12 @@
       this._mergers.splice(
         position,
         0,
-        Number(content
-          .find("[data-merge]")
-          .addBack("[data-merge]")
-          .attr("data-merge")) || 1
+        Number(
+          content
+            .find("[data-merge]")
+            .addBack("[data-merge]")
+            .attr("data-merge")
+        ) || 1
       );
     }
 
