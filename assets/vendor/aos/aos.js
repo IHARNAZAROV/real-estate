@@ -274,7 +274,12 @@
             self &&
             self.Object === Object &&
             self,
-          h = y || g || function () { return this }(),
+          h =
+            y ||
+            g ||
+            (function () {
+              return this;
+            })(),
           w = Object.prototype,
           k = w.toString,
           x = Math.max,
@@ -416,7 +421,12 @@
             self &&
             self.Object === Object &&
             self,
-          g = v || y || function () { return this }(),
+          g =
+            v ||
+            y ||
+            (function () {
+              return this;
+            })(),
           h = Object.prototype,
           w = h.toString,
           k = Math.max,
