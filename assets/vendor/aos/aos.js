@@ -93,9 +93,7 @@
             ? M()
             : (x.disableMutationObserver ||
                 d.default.isSupported() ||
-                (console.info(
-                  '\n      aos: MutationObserver is not supported on this browser,\n      code mutations observing has been disabled.\n      You may have to call "refreshHard()" by yourself.\n    '
-                ),
+                ({},
                 (x.disableMutationObserver = !0)),
               document
                 .querySelector("body")
