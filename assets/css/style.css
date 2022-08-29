@@ -80,15 +80,14 @@ h6,
   padding: 6px 0;
   line-height: 1;
   font-weight: 400;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   letter-spacing: 2px;
 }
 
 #text_hello {
-  font-weight:bold;
+  font-weight: bold;
   font-size: 15px;
   color: red;
-
 }
 
 #header .logo h1 a,
@@ -947,7 +946,7 @@ section {
   padding-bottom: 20px;
 }
 
-.footer-links{ 
+.footer-links {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -993,8 +992,6 @@ section {
   background: #eb5d1e;
   color: #fff;
 }
-
-
 
 @-webkit-keyframes animate-loading {
   0% {
