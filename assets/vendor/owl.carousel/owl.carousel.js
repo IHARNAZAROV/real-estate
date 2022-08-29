@@ -1531,10 +1531,10 @@
           this.$stage.append(item);
           this._items.push(item);
           this._mergers.push(
-            item
+            Number(item
               .find("[data-merge]")
               .addBack("[data-merge]")
-              .attr("data-merge") * 1 || 1
+              .attr("data-merge")) || 1
           );
         }, this)
       );
@@ -1573,10 +1573,10 @@
       this._items.length !== 0 && this._items[position - 1].after(content);
       this._items.push(content);
       this._mergers.push(
-        content
+        Number(content
           .find("[data-merge]")
           .addBack("[data-merge]")
-          .attr("data-merge") * 1 || 1
+          .attr("data-merge")) || 1
       );
     } else {
       this._items[position].before(content);
@@ -1584,10 +1584,10 @@
       this._mergers.splice(
         position,
         0,
-        content
+        Number(content
           .find("[data-merge]")
           .addBack("[data-merge]")
-          .attr("data-merge") * 1 || 1
+          .attr("data-merge")) || 1
       );
     }
 
@@ -3813,16 +3813,16 @@
     },
     tests = {
       csstransforms: function () {
-        return !!test("transform");
+        return Boolean(test("transform"));
       },
       csstransforms3d: function () {
-        return !!test("perspective");
+        return Boolean(test("perspective"));
       },
       csstransitions: function () {
-        return !!test("transition");
+        return Boolean(test("transition"));
       },
       cssanimations: function () {
-        return !!test("animation");
+        return Boolean(test("animation"));
       },
     };
 

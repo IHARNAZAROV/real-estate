@@ -196,10 +196,10 @@
           return (
             (t = u(t) || 0),
             i(n) &&
-              ((M = !!n.leading),
+              ((M = Boolean(n.leading)),
               (S = "maxWait" in n),
               (y = S ? x(u(n.maxWait) || 0, t) : y),
-              (_ = "trailing" in n ? !!n.trailing : _)),
+              (_ = "trailing" in n ? Boolean(n.trailing) : _)),
             (m.cancel = l),
             (m.flush = p),
             m
@@ -211,18 +211,18 @@
           if ("function" != typeof e) throw new TypeError(s);
           return (
             i(o) &&
-              ((r = "leading" in o ? !!o.leading : r),
-              (a = "trailing" in o ? !!o.trailing : a)),
+              ((r = "leading" in o ? Boolean(o.leading) : r),
+              (a = "trailing" in o ? Boolean(o.trailing) : a)),
             n(e, t, { leading: r, maxWait: t, trailing: a })
           );
         }
         function i(e) {
           var t = "undefined" == typeof e ? "undefined" : c(e);
-          return !!e && ("object" == t || "function" == t);
+          return Boolean(e) && ("object" == t || "function" == t);
         }
         function r(e) {
           return (
-            !!e && "object" == ("undefined" == typeof e ? "undefined" : c(e))
+            Boolean(e) && "object" == ("undefined" == typeof e ? "undefined" : c(e))
           );
         }
         function a(e) {
@@ -236,12 +236,12 @@
           if (a(e)) return f;
           if (i(e)) {
             var t = "function" == typeof e.valueOf ? e.valueOf() : e;
-            e = i(t) ? t + "" : t;
+            e = i(t) ? String(t) : t;
           }
-          if ("string" != typeof e) return 0 === e ? e : +e;
+          if ("string" != typeof e) return 0 === e ? e : Number(e);
           e = e.replace(l, "");
           var n = m.test(e);
-          return n || b.test(e) ? v(e.slice(2), n ? 2 : 8) : p.test(e) ? f : +e;
+          return n || b.test(e) ? v(e.slice(2), n ? 2 : 8) : p.test(e) ? f : Number(e);
         }
         var c =
             "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -354,10 +354,10 @@
           return (
             (t = a(t) || 0),
             o(n) &&
-              ((M = !!n.leading),
+              ((M = Boolean(n.leading)),
               (S = "maxWait" in n),
               (y = S ? k(a(n.maxWait) || 0, t) : y),
-              (_ = "trailing" in n ? !!n.trailing : _)),
+              (_ = "trailing" in n ? Boolean(n.trailing) : _)),
             (m.cancel = l),
             (m.flush = p),
             m
@@ -365,11 +365,11 @@
         }
         function o(e) {
           var t = "undefined" == typeof e ? "undefined" : u(e);
-          return !!e && ("object" == t || "function" == t);
+          return Boolean(e) && ("object" == t || "function" == t);
         }
         function i(e) {
           return (
-            !!e && "object" == ("undefined" == typeof e ? "undefined" : u(e))
+            Boolean(e) && "object" == ("undefined" == typeof e ? "undefined" : u(e))
           );
         }
         function r(e) {
@@ -383,12 +383,12 @@
           if (r(e)) return s;
           if (o(e)) {
             var t = "function" == typeof e.valueOf ? e.valueOf() : e;
-            e = o(t) ? t + "" : t;
+            e = o(t) ? String(t) : t;
           }
-          if ("string" != typeof e) return 0 === e ? e : +e;
+          if ("string" != typeof e) return 0 === e ? e : Number(e);
           e = e.replace(d, "");
           var n = p.test(e);
-          return n || m.test(e) ? b(e.slice(2), n ? 2 : 8) : l.test(e) ? s : +e;
+          return n || m.test(e) ? b(e.slice(2), n ? 2 : 8) : l.test(e) ? s : Number(e);
         }
         var u =
             "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -462,7 +462,7 @@
         );
       }
       function i() {
-        return !!o();
+        return Boolean(o());
       }
       function r(e, t) {
         var n = window.document,

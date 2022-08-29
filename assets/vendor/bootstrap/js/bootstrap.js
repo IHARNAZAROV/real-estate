@@ -2967,7 +2967,7 @@
         }); // Restore sticky content
 
         var elements = [].slice.call(
-          document.querySelectorAll("" + Selector$5.STICKY_CONTENT)
+          document.querySelectorAll(String(Selector$5.STICKY_CONTENT))
         );
         $(elements).each(function (index, element) {
           var margin = $(element).data("margin-right");
